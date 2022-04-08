@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/image-qr-code.png">
   
   <title>Frontend Mentor | QR code component</title>
 
@@ -14,90 +14,65 @@
     .attribution a { color: hsl(228, 45%, 44%); }
 
     body {
-      background-color: hsl(0, 89%, 43%);
-      margin: 0px;
-      height: 100%;
-    }
-
-    .div2 {
-      /* display: block;
-      background-color: white;
-      margin: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(0, 50%); */
-      /* height: 50%; */
-      /* width: 20%; */
-      /* padding-left: 50%; */
-      /* text-align: center; */
-      /* justify-content: center; */
-      position: absolute;
-      background-color: white;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      /* border: 5px solid red; */
-      border-radius: 25px;
-      height: 45%;
-      width: 10%;
-    }
-    
-    .div1 {
-      display: absolute;
       background-color: hsl(212, 45%, 89%);
-      height: 100vh;
-      width: 100%;
     }
 
-    .inner-div-2 {
-      padding: 4%;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(212, 45%, 89%);
+        /* border: 5px solid red; */
+    }
+
+    .content {
+        text-align: center;
+        height: 500px;
+        width: 320px;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 5px 5px 30px 1px grey;
+        /* border: 5px solid blue; */
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+        padding: 3%;
+        border-radius: 25px;
     }
 
-    .image-style {
-      padding: 5%;
-      border-radius: 25px;
-      text-align: center;
+    h1 {
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
-    #first-paragraph {
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.8vh;
-      padding-top: 5%;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-
-    #second-paragraph {
-      text-align: center;
-      font-size: 1.8vh;
-      color: hsl(220, 15%, 55%);
-      padding-top: 5%;
-      padding-left: 10%;
-      padding-right: 10%;
+    h2 {
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+        color: hsl(220, 15%, 55%);
     }
 
   </style>
 </head>
 <body>
-
-  <div class="div1">
-    <div class="div2">
-      <div class="image-style">
-        <img src="/images/image-qr-code.png" style="border-radius: 25px" width="300" height="300">
-      </div>
-      <div id="first-paragraph">
-        Improve your front-end skills by building projects
-      </div>
-      <div id="second-paragraph">
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!
-      </div>
+    <div class="container">
+        <div class="content">
+            <div>
+                <img src="images/image-qr-code.png" height="300" width="300">
+            </div>
+            <div>
+                <h1>Improve your front-end skills by building projects</h1>
+            </div>
+            <div>
+                <h2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
